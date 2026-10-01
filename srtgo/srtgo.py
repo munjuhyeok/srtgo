@@ -797,7 +797,9 @@ def _handle_error(ex, msg=None):
     print(msg)
     tgprintf = get_telegram()
     asyncio.run(tgprintf(msg))
-    return inquirer.confirm(message="계속할까요", default=True)
+    print("자동으로 계속합니다... (중단: Ctrl+C)")
+    _sleep()
+    return True
 
 
 def _is_seat_available(train, seat_type, rail_type):
