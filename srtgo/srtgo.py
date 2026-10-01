@@ -17,7 +17,7 @@ import telegram
 import time
 import re
 
-from .ktx import (
+from ktx import (
     Korail,
     KorailError,
     ReserveOption,
@@ -29,7 +29,7 @@ from .ktx import (
     Disability4To6Passenger,
 )
 
-from .srt import (
+from srt import (
     SRT,
     SRTError,
     SRTNetFunnelError,
